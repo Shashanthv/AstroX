@@ -21,7 +21,7 @@ const Meeting = () => {
     flex flex-col  w-full  
 
      overflow-clip inset-0 -z-10 
-  bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]
+  bg-[#121212] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]
     
     ">
       <ShowcaseNavbar />
@@ -61,7 +61,7 @@ const Meeting = () => {
                 >
                   <PiCheckCircle className=" rounded-md text-[#3d80d7] text-2xl flex-shrink-0" />
                   <ul>
-                    <h3 className="text-lg font-bold text-gray-700">
+                    <h3 className="text-lg font-bold text-gray-300">
                       {item.title}
                     </h3>
                     <div className="text-gray-400">{item.description}</div>

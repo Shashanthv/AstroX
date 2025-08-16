@@ -73,9 +73,9 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16 bg-white">
+                     <Circle ref={div6Ref} className="size-16 bg-black">
           <Image
-          src={'/logo/logo.webp'}
+                        src={'/logo/logo.png'}
           height={1000}
           width={1000}
           alt="logo"
@@ -83,7 +83,7 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref} className="bg-white">
+                     <Circle ref={div7Ref} className="bg-black">
             <Icons.user />
           </Circle>
         </div>
@@ -447,7 +447,7 @@ const Icons = {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#000000"
+      stroke="#ffffff"
       strokeWidth="2"
       xmlns="http://www.w3.org/2000/svg"
     >

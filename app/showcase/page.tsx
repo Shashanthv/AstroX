@@ -1,4 +1,3 @@
-import { BlurFadeDemo } from "@/components/demos/blur-fade-demo";
 import Footer from "@/components/footer";
 import WordFadeIn from "@/components/magicui/word-fade-in";
 import ShowcaseNavbar from "@/components/showcase-navbar";
@@ -10,7 +9,7 @@ const Showcase = () => {
       className="
         overflow-clip 
  inset-0 
- -z-10 h-full w-full bg-[#fafafa]
+ -z-10 h-full w-full bg-[#121212]
   bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
    bg-[size:14px_24px]"
     >
@@ -23,13 +22,10 @@ const Showcase = () => {
           />
         </div>
         <p className="md:text-center text-xl md:text-2xl my-6   md:w-4/5 mx-auto text-gray-500">
-          Have a look at some of our recent projects.
+          Let's work together to bring your vision to life.
         </p>
 
-        <BlurFadeDemo />
-
         <LetsMakeThingsHappenSection />
-
 
       </section>
 

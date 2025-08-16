@@ -59,22 +59,22 @@ const services = [
 
 export default function Home() {
   return (
-    <div
-      className="overflow-clip 
- inset-0 
- -z-10 h-full w-full bg-[#fafafa]
-  bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
-   bg-[size:14px_24px]"
-    >
+         <div
+       className="overflow-clip 
+  inset-0 
+  -z-10 h-full w-full bg-[#121212]
+   bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
+    bg-[size:14px_24px]"
+     >
       <Element
         name="top"
-        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-   xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
-   justify-between py-6 px-4 md:px-8 mx-6"
+                 className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
+    xl:w-4/5 2xl:w-[68%] bg-black flex items-center 
+    justify-between py-6 px-4 md:px-8 mx-6"
       >
         <Link href={"/"}>
           <Image
-            src={"/logo/logo.webp"}
+            src={"/logo/logo.png"}
             alt="Logo"
             width={1000}
             height={1000}
@@ -83,7 +83,7 @@ export default function Home() {
         </Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
+                     <div className="hidden md:flex gap-x-10 items-center text-gray-300 font-medium text-lg cursor-pointer">
             <Link href={"/showcase"} className="hover:text-blue-500">
               Showcase
             </Link>
@@ -115,27 +115,27 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
-            <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-              (519)-400-200
-            </button>
-          </a>
+                     <a href="tel:+919916728506" className="hidden lg:flex">
+             <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
+               +91 9916728506
+             </button>
+           </a>
 
           <Link
             href={"/meeting"}
-            className="
-  py-3 
-  px-6
-  text-lg 
-  hover:bg-[#abcbff]
-  rounded-[6px]
-  border-2
-  border-black
-  text-white
-  bg-[#121212]
-  transition
-  duration-200
-     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+                         className="
+   py-3 
+   px-6
+   text-lg 
+   hover:bg-[#abcbff]
+   rounded-[6px]
+   border-2
+   border-white
+   text-black
+   bg-white
+   transition
+   duration-200
+      hover:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] dark:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
           >
             Book a call
           </Link>
@@ -149,10 +149,10 @@ export default function Home() {
           <h1>
             <CoverDemo />
           </h1>
-          <p
-            className="md:text-center
-           text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500"
-          >
+                     <p
+             className="md:text-center
+            text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-400"
+           >
             Schedule a call with us to discuss your project and get a quote in
             minutes
           </p>
@@ -167,35 +167,35 @@ export default function Home() {
           >
             <Link
               href="/meeting"
-              className="py-3 
-            px-10
-            md:px-16
-      md:text-xl
-      hover:bg-[#abcbff] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-       bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+                             className="py-3 
+             px-10
+             md:px-16
+       md:text-xl
+       hover:bg-[#abcbff] 
+       rounded-[6px]
+       border-2 
+       border-white 
+       dark:border-black 
+        bg-white 
+        text-black 
+        transition 
+        duration-200 
+        hover:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] dark:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
             >
               Book a Call
             </Link>
             <Link
               href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
+                             className="
+               bg-black
+    py-3 
+    px-10
+    md:px-16
+       md:text-xl
+         border-4
+         border-white
+         rounded-[6px]
+         hover:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] dark:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
             >
               Showcase
             </Link>
@@ -230,7 +230,7 @@ export default function Home() {
 
           <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
             <div className="md:w-2/5">
-              <h1 className="text-2xl font-medium text-gray-600 w-4/5">
+                             <h1 className="text-2xl font-medium text-gray-400 w-4/5">
                 Trusted by fast moving brands worldwide
               </h1>
 
@@ -238,18 +238,18 @@ export default function Home() {
                 <div>
                   <h1 className="text-blue-500 text-3xl md:text-5xl">
                     <NumberTicker value={1000} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
+                    <p className="text-gray-400 text-sm md:text-md">
                       Happy Clients
                     </p>
                   </h1>
                 </div>
 
-                <div className="w-px bg-gray-300 self-stretch"></div>
+                                 <div className="w-px bg-gray-600 self-stretch"></div>
 
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
                     <NumberTicker value={100} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
+                    <p className="text-gray-400 text-sm md:text-md">
                       Projects Completed
                     </p>
                   </h1>
@@ -261,16 +261,16 @@ export default function Home() {
               <InfiniteMovingLogos
                 speed="slow"
                 direction="left"
-                items={[
-                  {
-                    logo: "/logo/logo.webp",
-                    name: "Logo",
-                  },
-                  {
-                    logo: "/logo/logo.webp",
-                    name: "Logo",
-                  },
-                ]}
+                                 items={[
+                   {
+                     logo: "/logo/logo.png",
+                     name: "Logo 1",
+                   },
+                   {
+                     logo: "/logo/logo.png",
+                     name: "Logo 2",
+                   },
+                 ]}
               />
             </section>
           </div>
@@ -282,7 +282,7 @@ export default function Home() {
         <h1>
           <WordPullUpDemo />
         </h1>
-        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-400">
         All of our services are designed to help your business stand out 
         </p>
 
@@ -290,17 +290,17 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-800 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
               >
                 <Image
                   src={service.icon}
                   width={10000}
                   height={10000}
-                  className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
+                  className="object-contain bg-gray-800 p-4 w-full h-40 rounded-md"
                   alt="image"
                 />
                 <h1 className="text-xl font-medium">{service.title}</h1>
-                <p className="text-gray-500">{service.description}</p>
+                <p className="text-gray-400">{service.description}</p>
               </div>
             ))}
           </div>
@@ -336,9 +336,9 @@ export default function Home() {
             Process
           </h1>
 
-          <p className="text-center 
-          py-4 md:w-1/2 mx-auto 
-          text-xl md:text-2xl text-gray-500">
+                     <p className="text-center 
+           py-4 md:w-1/2 mx-auto 
+           text-xl md:text-2xl text-gray-400">
             All of our services are designed to help your business to get
             noticed.
           </p>
@@ -358,16 +358,16 @@ export default function Home() {
 
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
-          <Image
-            src={"/logo/logo.webp"}
-            width={10000}
-            height={10000}
-            className=" md:w-1/3 rounded-md"
-            alt="image"
-          />
+                     <Image
+             src={"/logo/logo.png"}
+             width={10000}
+             height={10000}
+             className=" md:w-1/3 rounded-md"
+             alt="image"
+           />
           <div className="flex flex-col gap-y-5 md:w-1/2">
             <h1 className="text-lg md:text-2xl ">
-              &quot;We&apos;ve been working with Bird for over 2 years and
+              &quot;We&apos;ve been working with AstroX for over 2 years and
               they&apos;ve been amazing to work with. They&apos;ve helped us
               grow our business and we couldn&apos;t be happier with the
               results. &quot;
@@ -396,25 +396,25 @@ export default function Home() {
       <LetsMakeThingsHappenSection />
       </section>
 
-      <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
+             <footer className="bg-[#121212] py-10  px-6 md:px-0 md:mx-auto border-t">
         <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium ">
-            <Image
-              src={"/logo/logo.webp"}
-              width={10000}
-              height={10000}
-              className="w-40"
-              alt="image"
-            />{" "}
+                         <Image
+               src={"/logo/logo.png"}
+               width={10000}
+               height={10000}
+               className="w-40"
+               alt="image"
+             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
-          </p>
+                                           <p className="text-left  text-xl  text-gray-400">+91 9916728506</p>
+                     <p className="text-left  text-xl  text-gray-400">
+             admin@astrox.ca
+           </p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Bird. All Rights Reserved.
+          © 2025 AstroX. All Rights Reserved.
           <Link href="/" className="text-blue-500">
             Privacy Policy
           </Link>
