@@ -22,7 +22,7 @@ const Showcase = () => {
           />
         </div>
         <p className="md:text-center text-xl md:text-2xl my-6   md:w-4/5 mx-auto text-gray-500">
-          Let's work together to bring your vision to life.
+          Let&apos;s work together to bring your vision to life.
         </p>
 
         <LetsMakeThingsHappenSection />
