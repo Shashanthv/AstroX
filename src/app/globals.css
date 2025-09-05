@@ -3,6 +3,34 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Dark theme (default) */
+  --bg-primary: #0f1020;
+  --bg-secondary: #1a1b2b;
+  --bg-tertiary: #23244a;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e7ff;
+  --text-muted: #b6c3ff;
+  --accent-primary: #7b5cff;
+  --accent-secondary: #00eaff;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --accent-primary: #7b5cff;
+  --accent-secondary: #00eaff;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --card-bg: rgba(0, 0, 0, 0.05);
+  --hover-bg: rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
@@ -57,4 +85,9 @@ body {
 .animate-gradient-move {
   background-size: 200% 200%;
   animation: gradient-move 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

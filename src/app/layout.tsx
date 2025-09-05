@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Sora } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
-export const metadata: Metadata = {
-  title: "Asto X | Award-Winning Digital Marketing Agency",
-  description: "Discover, create, and elevate your brand with Asto X. Digital marketing, branding, creative design, and more.",
-};
+import SplashScreen from "../components/SplashScreen";
+import ThemeToggle from "../components/ThemeToggle";
+import { useState } from "react";
 
 const sora = Sora({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-sora" });
 
@@ -16,12 +14,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [showContent, setShowContent] = useState(false);
+
+  const handleSplashComplete = () => {
+    setShowContent(true);
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`bg-gradient-to-br from-[#0f1020] via-[#1a1b2b] to-[#23244a] min-h-screen text-white ${sora.className}`}>
-        <Navbar />
-        <div className="pt-20">{children}</div>
-        <Footer />
+      <body className={`bg-gradient-to-br from-[var(--bg-primary)] via-[var(--bg-secondary)] to-[var(--bg-tertiary)] min-h-screen text-[var(--text-primary)] transition-colors duration-300 ${sora.className}`}>
+        {/* Always render both, but control visibility */}
+        <div style={{ display: showContent ? 'none' : 'block' }}>
+          <SplashScreen onComplete={handleSplashComplete} />
+        </div>
+        
+        <div style={{ display: showContent ? 'block' : 'none' }}>
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </div>
+        
+        {/* Theme toggle button - always visible */}
+        <ThemeToggle />
       </body>
     </html>
   );
